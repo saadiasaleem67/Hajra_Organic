@@ -12,10 +12,11 @@ interface IProp {
   name: string;
   _id: string;
   slug: string;
-
-  category: string[];
-  image: any;
   price: number;
+  image: any;
+  raiting: number;
+  instock: string;
+  category: string[];
   product1name: string;
   product1list: string[];
   product2name: string;
@@ -23,27 +24,24 @@ interface IProp {
   product3name: string;
   product3list: string[];
   prevoiusprice: number;
-  raiting: number;
-  instock: string;
 }
 async function getData(slug: string) {
   const query = `*[_type == "deals" && slug.current == '${slug}'][0]{
-     name,
-     price,
-     product1name,
-     product1list,
-     product2name,
-     product2list,
-     product3name,
-     product3list,
-         _id,
-     "slug":slug.current,
-        
-     image,     
-     prevoiusprice,
-     instock,
-     raiting,
-     "category":category[]->{
+    name,
+    _id,
+    price,
+    image,     
+    prevoiusprice,
+    instock,
+    raiting,
+    product1name,
+    product1list,
+    product2name,
+    product2list,
+    product3name,
+    product3list,
+    "slug":slug.current,
+    "category":category[]->{
      name
 }
     }`;
@@ -67,11 +65,9 @@ const main = async ({ params }: Iprops) => {
         <Link href={"/"} className="text-mytext">
           Home
         </Link>
-
         <span>
           <PiGreaterThanBold />
         </span>
-
         <p className="text-mypink">{data.name}</p>
       </div>
 
@@ -89,6 +85,7 @@ const main = async ({ params }: Iprops) => {
                 {data.name}
               </p>
               <div>
+                {/* product Avaibility for mobile */}
                 <div className="xl:hidden lg:hidden sm:hidden">
                   {data.instock === outofstock ? (
                     <div className=" bg-red-500 rounded-full  p-2 ">
@@ -115,7 +112,7 @@ const main = async ({ params }: Iprops) => {
                 </span>
                 <p className=" text-mytext font-semibold text-2xl">{`PKR ${data.price}.00`}</p>
               </div>
-
+              {/* product Avaibility */}
               <div className="hidden sm:flex lg:flex xl:flex">
                 {data.instock === outofstock ? (
                   <div className=" bg-red-500 rounded-full mr-9  p-2 ">
@@ -142,6 +139,7 @@ const main = async ({ params }: Iprops) => {
             <div className="flex mt-3">
               <div className="flex mt-1 gap-1">
                 <p className="text-mytext">{data.raiting}</p>
+                {/* socail media links */}
                 <span className="text-yellow-400 mt-1">
                   <FaStar />
                 </span>
@@ -163,7 +161,7 @@ const main = async ({ params }: Iprops) => {
                 </Link>
               </span>
             </div>
-
+            {/* shippping */}
             <div className="mt-2 ">
               <div className="flex text-mytext mt-2 text-lg gap-2">
                 <FaTruck />
@@ -184,7 +182,6 @@ const main = async ({ params }: Iprops) => {
               </p>
               <div className="mt-2 ml-7">
                 <p className="  text-zinc-800">{data.product1name}</p>
-
                 <p className="mt-2  text-zinc-800">{data.product2name}</p>
                 <p className="mt-2  text-zinc-800">{data.product3name}</p>
               </div>
@@ -202,7 +199,7 @@ const main = async ({ params }: Iprops) => {
             </div>
           </div>
         </div>
-
+        {/* Decrpitions */}
         <div className="mt-10">
           <p className="mt-3 ml-10 text-3xl text-zinc-900 font-semibold">
             Description
