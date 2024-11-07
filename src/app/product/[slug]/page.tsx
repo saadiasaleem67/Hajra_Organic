@@ -11,7 +11,7 @@ import { GrInstagram } from "react-icons/gr";
 interface IProp {
   name: string;
   _id: string;
-  slug : string ;
+  slug: string;
   category: string[];
   image: any;
   price: number;
@@ -26,14 +26,14 @@ async function getData(slug: string) {
   const query = `*[_type == "product" && slug.current == '${slug}'][0]{
     name,
     price,
-       _id,
+    _id,
     "slug":slug.current ,
     image,     
     prevoiusprice,
     instock,
     raiting,
     productdescription,
-   list[],
+    list[],
     "category":category[]->{
       name
     }
@@ -62,7 +62,7 @@ const main = async ({ params }: Iprops) => {
         <span>
           <PiGreaterThanBold />
         </span>
-        <p className="text-mypink">{data.name }</p>
+        <p className="text-mypink">{data.name}</p>
       </div>
 
       {/* Side image */}
@@ -71,7 +71,7 @@ const main = async ({ params }: Iprops) => {
           {/* selective image */}
           <ImageGallery image={data.image} />
 
-          {/* product Data */}
+          {/* product Avaibility for mobile*/}
           <div className="container mt-5">
             <div className="xl:hidden lg:hidden sm:hidden flex justify-end ">
               {data.instock === outofstock ? (
@@ -90,9 +90,10 @@ const main = async ({ params }: Iprops) => {
                 </div>
               )}
             </div>
-
+            {/* Product name */}
             <p className="text-zinc-900 text-3xl mb-1 font-bold">{data.name}</p>
             <div className="flex mt-4 justify-between">
+              {/* price */}
               <div className="flex gap-3">
                 <span className="text-lg text-gray-400 line-through font-bold">
                   {`PKR ${data.prevoiusprice}`}
@@ -101,6 +102,7 @@ const main = async ({ params }: Iprops) => {
                   {`PKR ${data.price}.00`}
                 </p>
               </div>
+              {/*  product Avaibility*/}
               <div className="hidden sm:flex lg:flex xl:flex ">
                 {data.instock === outofstock ? (
                   <div className=" bg-red-500 rounded-full mr-9  p-2 ">
@@ -123,10 +125,11 @@ const main = async ({ params }: Iprops) => {
             <p className=" text-sm text-start text-mytext ">
               Taxes are included.
             </p>
-
+            {/* raiting */}
             <div className="flex mt-3">
               <div className="flex gap-1">
                 <p className="text-mytext">{data.raiting}</p>
+                {/* socail media links */}
                 <span className="text-yellow-400 mt-1">
                   <FaStar />
                 </span>
@@ -148,7 +151,7 @@ const main = async ({ params }: Iprops) => {
                 </Link>
               </span>
             </div>
-
+            {/*shipping  */}
             <div className="mt-2">
               <div className="flex text-mytext mt-2 text-lg gap-2">
                 <FaTruck />
@@ -176,7 +179,6 @@ const main = async ({ params }: Iprops) => {
                 Ingredients
               </p>
               <p className="text-mytext ml-3 mt-2">{data.productdescription}</p>
-              {/* deal waly me edit krna hy */}
             </div>
             <div className="flex gap-3 mt-5">
               <Addtobag
