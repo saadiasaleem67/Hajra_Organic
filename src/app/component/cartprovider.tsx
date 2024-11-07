@@ -1,7 +1,5 @@
 "use client";
-
 import { CartProvider } from "use-shopping-cart";
-
 import React, { ReactNode } from "react";
 
 const Cartprovider = ({ children }:{children:ReactNode}) => {
