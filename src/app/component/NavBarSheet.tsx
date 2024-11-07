@@ -33,7 +33,7 @@ const navLinks = [
 ];
 const NavBarSheet = () => {
   return (
-    <div>
+    <div> 
       <Sheet>
         <SheetTrigger>
           <RiMenuUnfold2Fill />
