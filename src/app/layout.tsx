@@ -24,7 +24,6 @@ export default function RootLayout({
       <body className={`${inter.className} bg-body `}>
         <Cartprovider>
           <Navbar />
-
           <div className="bg-green-500  w-16 h-16 rounded-full fixed top-[510px] right-14 flex items-center justify-center ">
             <Link href={"/"}>
               <div className="text-3xl text-white">
