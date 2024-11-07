@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import Image from "next/image";
 import logo2 from "/public/images/logo-removebg-preview.png";
@@ -22,7 +21,7 @@ const Navbar = () => {
       name: "Face-Lip",
       path: "/Face-Lip",
     },
-    
+
     {
       name: "Scrubs",
       path: "/Scrubs",
@@ -35,15 +34,13 @@ const Navbar = () => {
       name: "Creams",
       path: "/Creams",
     },
-   
-    
   ];
   const pathname = usePathname();
 
   return (
     //
     <div>
-      {/* message */}
+      {/*upper message */}
       <div className="bg-gray-900">
         <p className="text-gray-50 font-medium text-center p-2">
           Delivery charges Rs.200. Delivery time for Karachi 4-5 working days,
@@ -51,9 +48,9 @@ const Navbar = () => {
         </p>
       </div>
 
-      {/*  header */}
+      {/*  Main Header */}
       <div className="container md:flex xl:items-center xl:justify-between flex items-center justify-between lg:items-center lg:justify-between sm:items-center sm:justify-between">
-        {/* sheet */}
+        {/* sheet for mobile and tablets*/}
         <div className="text-4xl text-mytext lg:hidden">
           <NavBarSheet />
         </div>
@@ -65,7 +62,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* navbar-items */}
+        {/* Links  */}
         <nav className="hidden gap-12 lg:flex ">
           {Links.map((link, idx) => (
             <div key={idx}>
