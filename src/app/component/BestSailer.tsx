@@ -31,14 +31,13 @@ const BestSailer = async () => {
   const data: IProp[] = await getdata();
   return (
     <div className="container mt-16">
+      
       {/* name */}
-
       <div className="container px-5 mx-auto ">
         <div className="text-center">
           <h1 className="text-4xl xl:text-4xl lg:text-4xl sm:text-5xl title-font  text-gray-900 font-extrabold capitalize ">
-            Best Seller
+            Best Selling
           </h1>
-
           <div className="flex mt-2 justify-center">
             <div className="w-20 h-1 rounded-full bg-mypurple inline-flex" />
           </div>
@@ -60,27 +59,19 @@ const BestSailer = async () => {
                 />
               </div>
 
-              {/* product data */}
               <div className="mt-2">
+                {/* product name */}
                 <p className=" text-mytext font-bold "> {item.name}</p>
               </div>
             </Link>
 
             {/* price */}
-            
-              <div className="lg:flex xl:flex sm:flex gap-3 mt-1">
-                <span className=" text-[#d00000] line-through  ">
-                  {`PKR ${item.prevoiusprice}`}
-                </span>
-                <p className=" text-mytext font-bold text-xl">{`PKR ${item.price}.00`}</p>
-              </div>
-           
-            {/* butoon for view details */}
-            {/* <Link href={`/product/${item.slug}`}>
-              <button className="bg-[#fb6f92] text-center p-2 rounded-full font-medium text-xl mt-4 hover:bg-mytext duration-500 text-body w-full">
-                View More Details
-              </button>
-            </Link> */}
+            <div className="lg:flex xl:flex sm:flex gap-3 mt-1">
+              <span className=" text-[#d00000] line-through  ">
+                {`PKR ${item.prevoiusprice}`}
+              </span>
+              <p className=" text-mytext font-bold text-xl">{`PKR ${item.price}.00`}</p>
+            </div>
           </div>
         ))}
       </div>
