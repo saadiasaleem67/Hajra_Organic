@@ -9,6 +9,28 @@ import {
 } from "@/components/ui/sheet";
 import { RiMenuUnfold2Fill } from "react-icons/ri";
 import Link from "next/link";
+const navLinks = [
+  {
+    name: "Body-Hair",
+    link: "/Body-Hair",
+  },
+  {
+    name: "Face-Lip",
+    link: "Face-Lip",
+  },
+  {
+    name: "Creams",
+    link: "/Creams",
+  },
+  {
+    name: "Serums",
+    link: "/Serums",
+  },
+  {
+    name: "Scrubs",
+    link: "/Scrubs",
+  },
+];
 const NavBarSheet = () => {
   return (
     <div>
@@ -22,34 +44,16 @@ const NavBarSheet = () => {
               <Link href={"/"}>Hajrah's Orgaric</Link>
             </SheetTitle>
             <SheetDescription>
-              <div className="mt-4 ">
-                <Link href={"/Body-Hair"}>
-                  <p className="text-xl font-semibold hover:text-mypink duration-500 mt-4  pb-4 border-b">
-                    Body-Hair
-                  </p>
-                </Link>
-                <Link href={"/Face-Lip"}>
-                  <p className="text-xl font-semibold hover:text-mypink duration-500 mt-4 pb-4 border-b">
-                    Face-Lip
-                  </p>
-                </Link>
-                <Link href={"/Creams"}>
-                  <p className="text-xl font-semibold hover:text-mypink duration-500 mt-4 pb-4 border-b">
-                    Creams
-                  </p>
-                </Link>
-                <Link href={"/Serums"}>
-                  <p className="text-xl font-semibold hover:text-mypink duration-500 mt-4 pb-4 border-b">
-                    Serums
-                  </p>
-                </Link>
-                <Link href={"/Scrubs"}>
-                  <p className="text-xl font-semibold hover:text-mypink duration-500 mt-4 pb-4 border-b">
-                    Scrubs
-                  </p>
-                </Link>
-
-                
+              <div className="mt-4">
+                {navLinks.map((link, idx) => (
+                  <div key={idx}>
+                    <Link href={link.link}>
+                      <p className="text-xl font-semibold hover:text-mypink duration-500 mt-4  pb-4 border-b">
+                        {link.name}
+                      </p>
+                    </Link>
+                  </div>
+                ))}
               </div>
             </SheetDescription>
           </SheetHeader>
