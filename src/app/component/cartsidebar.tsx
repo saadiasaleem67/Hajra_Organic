@@ -4,7 +4,7 @@ import { BsCartX } from "react-icons/bs";
 import React from "react";
 import { useShoppingCart } from "use-shopping-cart";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import CheckOut from "./CheckOut";
+
 import {
   Sheet,
   SheetContent,
