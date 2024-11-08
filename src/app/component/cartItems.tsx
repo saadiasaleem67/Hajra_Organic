@@ -19,7 +19,7 @@ const CartItems = ({ item }: any) => {
         />
       </div>
       {/* description */}
-      <div className=" ml-2  w-full">
+      <div className=" ml-5  w-full">
         <h2 className="text-base font-semibold text-mytext w-60">
           {item.name}
         </h2>
@@ -35,9 +35,9 @@ const CartItems = ({ item }: any) => {
           </button>
         </div>
 
-        <div className="mt-4 flex justify-between ">
+        <div className="mt-2 flex justify-between ">
           {/* quantity */}
-          <div className="flex w-32 gap-2">
+          <div className="flex gap-3">
             <button onClick={() => decrementItem(item.id)}>
               <FaMinus />
             </button>
