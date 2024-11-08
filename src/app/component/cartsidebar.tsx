@@ -30,7 +30,7 @@ const Cartsidebar = () => {
             {cartCount === 0 ? (
               <h1 className=" text-xl py-2 mt-5">
                 <div className=" mt-20 ">
-                  <div className=" text-9xl  text-gray-600 pl-36">
+                  <div className=" text-9xl  text-gray-600 flex items-center justify-center">
                     <BsCartX />
                   </div>
                   <p className="text-center mt-4 text-base">
