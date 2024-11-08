@@ -103,7 +103,7 @@ const Footer = () => {
       <div className="bg-gray-800 bg-opacity-75">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-gray-400 text-sm text-center sm:text-left">
-            © 2024 Hajrah's Organic — by
+            © 2024 Hajrah Organic — by
             <Link
               href={"https://www.linkedin.com/in/saadia-saleem-683878293/"}
               className="text-gray-200 ml-1"
