@@ -7,19 +7,22 @@ import { useShoppingCart } from "use-shopping-cart";
 const CartItems = ({ item }: any) => {
   const { removeItem, incrementItem, decrementItem } = useShoppingCart();
   return (
-    <div className="flex w-full border-b border-zinc-400 h-[120px] mt-2">
-      <div className="w-32 flex items-center justify-center border border-gray-800">
+    <div className="flex w-full border-b border-zinc-400 h-[120px] mt-2 place-items-center ">
+      <div>
+      <div className="w-[100px] h-[90px] flex items-center justify-center " >
         {/* image */}
         <Image
           src={item.image}
           alt="product image"
-          width={150}
-          height={150}
-          className="object-contain"
+         width={100}
+         height={100}
+          className="object-contain  border border-gray-800 "
+          
         />
       </div>
+      </div>
       {/* description */}
-      <div className=" ml-5 w-full">
+      <div className=" ml-3 w-full">
         <h2 className="text-base font-semibold text-mytext w-60">
           {item.name}
         </h2>
