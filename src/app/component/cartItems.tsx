@@ -7,14 +7,14 @@ import { useShoppingCart } from "use-shopping-cart";
 const CartItems = ({ item }: any) => {
   const { removeItem, incrementItem, decrementItem } = useShoppingCart();
   return (
-    <div className="flex w-full border-b border-zinc-400 my-5 h-[110px]">
-      <div className=" w-28 flex items-center justify-center  border mb-1 border-zinc-400 ">
+    <div className="flex w-full border-b border-zinc-400 h-[120px]">
+      <div className="w-32 flex items-center justify-center ">
         {/* image */}
         <Image
           src={item.image}
           alt="product image"
-          width={100}
-          height={100}
+          width={150}
+          height={150}
           className="object-contain"
         />
       </div>
