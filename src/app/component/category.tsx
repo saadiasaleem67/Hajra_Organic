@@ -29,7 +29,7 @@ const Links = [
   },
   {
     name: "Serums ",
-    items: " Product",
+    items: "2 Product",
     href: "/Serums",
     pic: "/images/serums.png",
   },
