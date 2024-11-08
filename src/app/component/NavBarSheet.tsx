@@ -41,7 +41,7 @@ const NavBarSheet = () => {
         <SheetContent>
           <SheetHeader>
             <SheetTitle className="text-4xl font-semibold text-mypink">
-              <Link href={"/"}>Hajrah's Orgaric</Link>
+              <Link href={"/"}>Hajrah Orgaric</Link>
             </SheetTitle>
             <SheetDescription>
               <div className="mt-4">
