@@ -34,7 +34,7 @@ const Aboutus = () => {
             She completed her Pharm D Degree in 2012 from Karachi University.
             She compounded her first pain relief Balm product in 2014 with the
             support of her mother-in-law. In 2017 she launch HajraHijab, a
-            premium hijab brand. In 2021 she launch Hajrah's Organic, premium
+            premium hijab brand. In 2021 she launch Hajrah Organic, premium
             and pure organic skincare and haircare products brand.{" "}
           </p>
         </div>
