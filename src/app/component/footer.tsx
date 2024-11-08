@@ -9,7 +9,7 @@ const Footer = () => {
       {/* Offical Hajra Organic  website link */}
       <div className="w-full h-10 mt-6 text-center bg-gray-950 text-body hover:underline pt-1">
         <Link href={"https://hajrahorganic.com/"} target="_blank">
-          Visit Official Hajrah's Organic Website
+          Visit Official Hajrah Organic Website
         </Link>
       </div>
       {/* First Portion */}
@@ -19,7 +19,7 @@ const Footer = () => {
             href={"/"}
             className="flex title-font font-medium  md:justify-start  text-white"
           >
-            <p className="ml-3 text-2xl">Hajrah's Organic</p>
+            <p className="ml-3 text-2xl">Hajrah Organic</p>
           </Link>
           <p className="mt-2 ml-3 text-sm text-gray-400">
             Handmade Premium Organic Skincare and Haircare line started by Dr.
