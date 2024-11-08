@@ -19,7 +19,7 @@ const CartItems = ({ item }: any) => {
         />
       </div>
       {/* description */}
-      <div className=" ml-5  w-full">
+      <div className=" ml-5 w-full">
         <h2 className="text-base font-semibold text-mytext w-60">
           {item.name}
         </h2>
