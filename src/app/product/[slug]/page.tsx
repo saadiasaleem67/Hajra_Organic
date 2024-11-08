@@ -72,7 +72,7 @@ const main = async ({ params }: Iprops) => {
           <ImageGallery image={data.image} />
 
           {/* product Avaibility for mobile*/}
-          <div className="container mt-5">
+          <div className="container lg:mt-5">
             <div className="xl:hidden lg:hidden sm:hidden flex justify-end ">
               {data.instock === outofstock ? (
                 <div className=" bg-red-500 rounded-full  p-2 ">
