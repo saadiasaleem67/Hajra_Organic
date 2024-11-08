@@ -6,6 +6,8 @@ import { ImWhatsapp } from "react-icons/im";
 import Cartprovider from "./component/cartprovider";
 import Link from "next/link";
 import Footer from "./component/footer";
+import { FaFacebookF } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +25,33 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-body `}>
         <Cartprovider>
+          <div className=" bg-body h-16 sticky top-0">
+          <div className="container flex  items-center  justify-between pt-4" >
+            <p className="text-mytext font-medium text-center ">
+              +923343772380
+            </p>
+            <p className="text-mytext font-bold text-center text-xl lg:text-3xl  ">
+              <Link href={"/"}> Hajra Organic</Link>
+            </p>
+
+            <span className="flex ml-3 gap-1 ">
+                <Link
+                  href={"https://www.facebook.com/hajrahorgnaic"}
+                  target="_blank"
+                  className="text-gray-500 pt-1 text-lg"
+                >
+                  <FaFacebookF />
+                </Link>
+                <Link
+                  href={"https://www.instagram.com/hajrahorganic"}
+                  target="_blank"
+                  className="text-gray-500 font-bold pt-1 text-lg"
+                >
+                  <GrInstagram />
+                </Link>
+              </span>
+          </div>
+          </div>
           <Navbar />
           <div className="bg-green-500  w-16 h-16 rounded-full fixed bottom-7 right-14 flex items-center justify-center ">
             <Link href={"/"}>
