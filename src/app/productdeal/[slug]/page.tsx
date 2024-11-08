@@ -78,7 +78,7 @@ const main = async ({ params }: Iprops) => {
           <ImageGallery image={data.image} />
 
           {/* product Data */}
-          <div className=" container mt-5">
+          <div className=" container lg:mt-5 ">
             <div>
               {/* product Avaibility for mobile */}
               <div className="xl:hidden lg:hidden sm:hidden flex justify-end ">
