@@ -7,7 +7,7 @@ import { useShoppingCart } from "use-shopping-cart";
 const CartItems = ({ item }: any) => {
   const { removeItem, incrementItem, decrementItem } = useShoppingCart();
   return (
-    <div className="flex w-full border-b border-zinc-400 my-5 h-[110px]  ">
+    <div className="flex w-full border-b border-zinc-400 my-5 h-[110px]">
       <div className=" w-28 flex items-center justify-center  border mb-1 border-zinc-400 ">
         {/* image */}
         <Image
@@ -35,7 +35,7 @@ const CartItems = ({ item }: any) => {
           </button>
         </div>
 
-        <div className="mt-2 flex justify-between ">
+        <div className=" flex justify-between ">
           {/* quantity */}
           <div className="flex gap-3">
             <button onClick={() => decrementItem(item.id)}>
