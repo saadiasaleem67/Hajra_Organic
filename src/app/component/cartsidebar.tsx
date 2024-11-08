@@ -13,12 +13,12 @@ import {
 } from "@/components/ui/sheet";
 
 const Cartsidebar = () => {
-  const { cartCount, shouldDisplayCart, cartDetails, totalPrice } =
+  const { cartCount, shouldDisplayCart, cartDetails, totalPrice , handleCartClick } =
     useShoppingCart();
   return (
     <div>
       {/* Sheet */}
-      <Sheet open={true}>
+      <Sheet open={shouldDisplayCart} >
         <SheetContent className="sm:max-w-lg w-[90vw]">
           <SheetHeader>
             <SheetTitle className="text-3xl">
