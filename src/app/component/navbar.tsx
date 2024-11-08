@@ -41,12 +41,12 @@ const Navbar = () => {
     //
     <div>
       {/*upper message */}
-      <div className="bg-gray-900">
+      {/* <div className="bg-gray-900">
         <p className="text-gray-50 font-medium text-center p-2">
           Delivery charges Rs.200. Delivery time for Karachi 4-5 working days,
           Outside Karachi 5-10 working days. Except Weekends and Public Holidays
         </p>
-      </div>
+      </div> */}
 
       {/*  Main Header */}
       <div className="container md:flex xl:items-center xl:justify-between flex items-center justify-between lg:items-center lg:justify-between sm:items-center sm:justify-between">
