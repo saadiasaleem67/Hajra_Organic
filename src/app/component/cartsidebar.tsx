@@ -51,7 +51,7 @@ const Cartsidebar = () => {
           <div className="border-t border-gray-400 ox-4 py-6 sm:px-6">
             <div className="flex justify-between text-base font-medium text-mytext">
               <p className="text-2xl">Subtotal</p>
-              <p className="text-3xl">PKR {totalPrice}.00</p>
+              <p className="text-3xl">{totalPrice}.00</p>
             </div>
             <p className="mt-0.5 text-sm text-start text-gray-500">
               Shipping Charges on Actual
