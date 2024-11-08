@@ -18,12 +18,13 @@ const Cartsidebar = () => {
   return (
     <div>
       {/* Sheet */}
-      <Sheet open={shouldDisplayCart}>
+      <Sheet open={true}>
         <SheetContent className="sm:max-w-lg w-[90vw]">
           <SheetHeader>
             <SheetTitle className="text-3xl">
-              My Shopping Cart ({cartCount}){" "}
+              <p>My Shopping Cart ({cartCount}) </p>
             </SheetTitle>
+            <p>All price are in PKR</p>
           </SheetHeader>
           <>
             {cartCount === 0 ? (

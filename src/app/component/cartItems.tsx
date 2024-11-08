@@ -7,8 +7,8 @@ import { useShoppingCart } from "use-shopping-cart";
 const CartItems = ({ item }: any) => {
   const { removeItem, incrementItem, decrementItem } = useShoppingCart();
   return (
-    <div className="flex w-full border-b border-zinc-400 my-5 h-[120px] mb-2">
-      <div className=" w-28 flex items-center justify-center  border mb-2 border-zinc-400">
+    <div className="flex w-full border-b border-zinc-400 my-5 h-[110px]  ">
+      <div className=" w-28 flex items-center justify-center  border mb-1 border-zinc-400 ">
         {/* image */}
         <Image
           src={item.image}
@@ -19,8 +19,10 @@ const CartItems = ({ item }: any) => {
         />
       </div>
       {/* description */}
-      <div className=" ml-2">
-        <h2 className="text-base font-semibold text-mytext">{item.name}</h2>
+      <div className=" ml-2  w-full">
+        <h2 className="text-base font-semibold text-mytext w-60">
+          {item.name}
+        </h2>
         <div className="flex gap-4">
           <p className="text-mypink pt-2">{item.price}.00</p>
           {/* item remove  */}
@@ -33,22 +35,22 @@ const CartItems = ({ item }: any) => {
           </button>
         </div>
 
-        {/* quantity */}
-        <div className="flex  ">
-          <div className="flex w-32 gap-4 items-center justify-center">
+        <div className="mt-4 flex justify-between ">
+          {/* quantity */}
+          <div className="flex w-32 gap-2">
             <button onClick={() => decrementItem(item.id)}>
               <FaMinus />
             </button>
-            <div>{item.quantity}</div>
+            <div className="font-semibold">{item.quantity}</div>
             <button onClick={() => incrementItem(item.id)}>
               <FaPlus />
             </button>
           </div>
-        </div>
 
-        {/* total price */}
-        <div className=" mt-3 font-bold text-mytext text-end">
-          {item.price * item.quantity}.00
+          {/* Total price */}
+          <div className="font-bold text-mytext ">
+            {item.price * item.quantity}.00
+          </div>
         </div>
       </div>
     </div>
