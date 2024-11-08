@@ -72,7 +72,7 @@ const main = async ({ params }: Iprops) => {
       </div>
 
       {/* Side image */}
-      <div className="mx-auto max-w-screen-xl px-8">
+      <div className=" max-w-screen-xl px-8">
         <div className="grid lg:grid-cols-2 gap-5 sm:grid-cols-1 xl:grid-cols-2">
           {/* selective image */}
           <ImageGallery image={data.image} />
