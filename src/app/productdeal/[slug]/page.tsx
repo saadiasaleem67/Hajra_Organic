@@ -79,30 +79,28 @@ const main = async ({ params }: Iprops) => {
 
           {/* product Data */}
           <div className=" container mt-5">
-            <div className="flex justify-between">
-              {/* product name */}
-              <p className="text-zinc-900 text-3xl font-bold mb-1">
-                {data.name}
-              </p>
-              <div>
-                {/* product Avaibility for mobile */}
-                <div className="xl:hidden lg:hidden sm:hidden">
-                  {data.instock === outofstock ? (
-                    <div className=" bg-red-500 rounded-full  p-2 ">
-                      <p className="text-lg font-semibold text-body">
-                        {data.instock}
-                      </p>
-                    </div>
-                  ) : (
-                    <div className=" bg-green-500 rounded-full  p-2 ">
-                      <p className="text-lg font-semibold text-body">
-                        {data.instock}
-                      </p>
-                    </div>
-                  )}
+            <div>
+              {/* product Avaibility for mobile */}
+              <div className="xl:hidden lg:hidden sm:hidden flex justify-end ">
+              {data.instock === outofstock ? (
+                <div className=" bg-red-500 rounded-full  p-2 ">
+                  <p className="text-lg font-semibold text-body">
+                    {" "}
+                    {data.instock}
+                  </p>
                 </div>
-              </div>
+              ) : (
+                <div className=" bg-green-500 rounded-full p-2 ">
+                  <p className="text-lg font-semibold text-body">
+                    {" "}
+                    {data.instock}
+                  </p>
+                </div>
+              )}
             </div>
+            </div>
+            {/* product name */}
+            <p className="text-zinc-900 text-3xl font-bold mb-1">{data.name}</p>
 
             {/* product price */}
             <div className="lg:flex  sm:flex xl:flex mt-4 justify-between ">
@@ -201,15 +199,15 @@ const main = async ({ params }: Iprops) => {
         </div>
         {/* Decrpitions */}
         <div className="mt-10">
-          <p className="mt-3 ml-10 text-3xl text-zinc-900 font-semibold">
+          <p className="mt-3 lg:ml-10 text-3xl text-zinc-900 font-semibold">
             Description
           </p>
           <div className="mt-6">
-            <p className=" text-lg text-mypurple ml-14 font-bold">
+            <p className=" text-lg text-mypurple lg:ml-14 font-bold">
               {data.product1name}
             </p>
             {data.product1list.map((item, index) => (
-              <div key={index} className="ml-20 mt-2 ">
+              <div key={index} className="lg:ml-20 mt-2 ml-6 sm:ml-6 ">
                 <ul className="p-1">
                   <li className="list-disc text-zinc-800">{item}</li>
                 </ul>
@@ -218,11 +216,11 @@ const main = async ({ params }: Iprops) => {
           </div>
 
           <div className="mt-6">
-            <p className=" text-lg text-mypurple ml-14 font-bold">
+            <p className=" text-lg text-mypurple lg:ml-14 font-bold">
               {data.product2name}
             </p>
             {data.product2list.map((item, index) => (
-              <div key={index} className="ml-20 mt-2 ">
+              <div key={index} className="lg:ml-20 mt-2  ml-6 sm:ml-6">
                 <ul className="p-1">
                   <li className="list-disc text-zinc-800">{item}</li>
                 </ul>
@@ -231,11 +229,11 @@ const main = async ({ params }: Iprops) => {
           </div>
 
           <div className="mt-6">
-            <p className=" text-lg text-mypurple ml-14 font-bold">
+            <p className=" text-lg text-mypurple lg:ml-14 font-bold">
               {data.product3name}
             </p>
             {data.product3list?.map((item, index) => (
-              <div key={index} className="ml-20 mt-2 ">
+              <div key={index} className="lg:ml-20 mt-2  ml-6 sm:ml-6">
                 <ul className="p-1">
                   <li className="list-disc text-zinc-800">{item}</li>
                 </ul>
