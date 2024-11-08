@@ -45,7 +45,7 @@ const Reviews = async () => {
         </div>
       </div>
       {/* Review details */}
-      <div className="container grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 sm:grid-cols-2  sm:gap-5 gap-6 ">
+      <div className="container grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-4 sm:grid-cols-2  sm:gap-5 gap-6  place-items-center">
         {data.map((item) => (
           <div key={item._id} className="mt-7 pb-3 rounded-lg">
             <div className="  w-auto border border-gray-500 p-2">
