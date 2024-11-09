@@ -16,7 +16,7 @@ const Links = [
     pic: "/images/creams.png",
   },
   {
-    name: "lip Tint",
+    name: "Lip Tint",
     items: "3 Product",
     href: "/Face-Lip",
     pic: "/images/liptinit.png",
@@ -34,7 +34,7 @@ const Links = [
     pic: "/images/serums.png",
   },
   {
-    name: "Body Wash",
+    name: "Shampoo",
     items: "3 Product",
     href: "/Body-Hair",
     pic: "/images/shampo.png",
