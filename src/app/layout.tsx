@@ -6,7 +6,7 @@ import { ImWhatsapp } from "react-icons/im";
 import Cartprovider from "./component/cartprovider";
 import Link from "next/link";
 import Footer from "./component/footer";
-i
+
 
 const inter = Inter({ subsets: ["latin"] });
 
