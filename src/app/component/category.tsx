@@ -24,7 +24,7 @@ const Links = [
   {
     name: "Scrubs",
     items: "3 Product",
-    href: "/Body-Hair",
+    href: "/Scrubs",
     pic: "/images/scrubs.png",
   },
   {
