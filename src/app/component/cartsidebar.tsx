@@ -55,7 +55,7 @@ const Cartsidebar = () => {
 
           {/* bottom portion */}
           <div className="border-t border-gray-400 px-4 sm:px-6 sticky bottom-0">
-            <div className="flex justify-between text-base font-medium text-mytext mt-1">
+            <div className="flex justify-between text-base font-medium text-mytext ">
               <p className="text-2xl">Subtotal</p>
               <p className="text-3xl">{totalPrice}.00</p>
             </div>
