@@ -45,7 +45,7 @@ const Aboutus = () => {
           <div className="flex mt-5">
             <div className="xl:w-96 lg:w-72 sm:w-40 w-12 h-0.5 rounded-full bg-zinc-300 inline-flex " />
           </div>
-          <p className="text-center mt-6 xl:text-3xl lg:text-3xl sm:text-xl text-2xl font-extrabold ">
+          <p className="text-center mt-6 xl:text-3xl lg:text-3xl sm:text-xl text-xl font-extrabold ">
             <Link
               href={"https://www.instagram.com/hajrahorganic"}
               target="_blank"
@@ -62,7 +62,7 @@ const Aboutus = () => {
           <div className="flex mt-5">
             <div className="xl:w-96 lg:w-72 sm:w-40 w-12 h-0.5 rounded-full bg-zinc-300 inline-flex " />
           </div>
-          <p className="text-center mt-6 xl:text-3xl lg:text-3xl sm:text-xl text-2xl font-extrabold ">
+          <p className="text-center mt-6 xl:text-3xl lg:text-3xl sm:text-xl text-xl font-extrabold ">
             <Link
               href={"https://www.facebook.com/hajrahorgnaic"}
               target="_blank"
