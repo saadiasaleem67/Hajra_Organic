@@ -31,7 +31,6 @@ const BestSailer = async () => {
   const data: IProp[] = await getdata();
   return (
     <div className="container mt-16">
-      
       {/* name */}
       <div className="container px-5 mx-auto ">
         <div className="text-center">
