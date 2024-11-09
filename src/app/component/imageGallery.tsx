@@ -10,9 +10,9 @@ export default function ImageGallery({ image }: iAppProp) {
   const [bigimage, setbigimgae] = useState(image[0]);
   const handleImgae = (images: any) => setbigimgae(images);
   return (
-    <div className="container mt-2 ">
+    <div className="mt-5 ">
       {/* Main Big Image */}
-      <div className="relative overflow-hidden rounded-lg">
+      <div className="relative overflow-hidden rounded-lg xl:w-[500px] xl:h-[500px] xl:ml-14 sm:ml-16">
         <Image
           src={urlFor(bigimage).url()}
           alt="photo"
