@@ -72,13 +72,13 @@ const main = async ({ params }: Iprops) => {
       </div>
 
       {/* Side image */}
-      <div className=" max-w-screen-xl px-8">
-        <div className="grid lg:grid-cols-2 gap-5 sm:grid-cols-1 xl:grid-cols-2">
+      <div className="">
+        <div className="grid lg:grid-cols-2 gap-5 sm:grid-cols-1 xl:grid-cols-2 lg:gap-4">
           {/* selective image */}
           <ImageGallery image={data.image} />
 
           {/* product Data */}
-          <div className=" container lg:mt-5 ">
+          <div className="lg:mt-5  px-4 xl:px-0 lg:px-0 sm:px-0 sm:mt-3 ">
             <div>
               {/* product Avaibility for mobile */}
               <div className="xl:hidden lg:hidden sm:hidden flex justify-end ">
