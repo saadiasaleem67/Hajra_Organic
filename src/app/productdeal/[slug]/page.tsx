@@ -208,7 +208,7 @@ const main = async ({ params }: Iprops) => {
             </p>
             {data.product1list.map((item, index) => (
               <div key={index} className="lg:ml-20 mt-2 ml-6 sm:ml-6 ">
-                <ul className="p-1">
+                <ul>
                   <li className="list-disc text-zinc-800">{item}</li>
                 </ul>
               </div>
@@ -220,8 +220,8 @@ const main = async ({ params }: Iprops) => {
               {data.product2name}
             </p>
             {data.product2list.map((item, index) => (
-              <div key={index} className="lg:ml-20 mt-2  ml-6 sm:ml-6">
-                <ul className="p-1">
+              <div key={index} className="lg:ml-20 mt-2 ml-6 sm:ml-6">
+                <ul>
                   <li className="list-disc text-zinc-800">{item}</li>
                 </ul>
               </div>
@@ -233,8 +233,8 @@ const main = async ({ params }: Iprops) => {
               {data.product3name}
             </p>
             {data.product3list?.map((item, index) => (
-              <div key={index} className="lg:ml-20 mt-2  ml-6 sm:ml-6">
-                <ul className="p-1">
+              <div key={index} className="lg:ml-20 mt-2 ml-6 sm:ml-6">
+                <ul>
                   <li className="list-disc text-zinc-800">{item}</li>
                 </ul>
               </div>
