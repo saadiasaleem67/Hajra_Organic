@@ -10,7 +10,7 @@ const Links = [
     pic: "/images/bodywash.png",
   },
   {
-    name: "Crems",
+    name: "Creams",
     items: "3 Product",
     href: "/Creams",
     pic: "/images/creams.png",
