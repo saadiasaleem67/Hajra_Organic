@@ -44,7 +44,7 @@ const Cartsidebar = () => {
                 </div>
               </h1>
             ) : (
-              <ScrollArea className="h-[70vh] xl:h-[65vh] mb-4 pr-3">
+              <ScrollArea className="h-[60vh] xl:h-[65vh] mb-4 pr-3">
                 {cartDetails &&
                   Object.entries(cartDetails).map(([key, item]) => {
                     return <CartItems item={item} key={key} />;
@@ -54,8 +54,8 @@ const Cartsidebar = () => {
           </>
 
           {/* bottom portion */}
-          <div className="border-t border-gray-400 px-4 sm:px-6 sticky bottom-0">
-            <div className="flex justify-between text-base font-medium text-mytext ">
+          <div className="border-t border-gray-400 sm:px-6 sticky bottom-0 pt-3">
+            <div className="flex justify-between text-base font-medium text-mytext  ">
               <p className="text-2xl">Subtotal</p>
               <p className="text-3xl">{totalPrice}.00</p>
             </div>
