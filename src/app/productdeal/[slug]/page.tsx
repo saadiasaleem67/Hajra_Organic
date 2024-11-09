@@ -198,7 +198,7 @@ const main = async ({ params }: Iprops) => {
           </div>
         </div>
         {/* Decrpitions */}
-        <div className="mt-10">
+        <div className="lg:mt-10 xl:mt-9 sm:mt-7">
           <p className="mt-3 lg:ml-10 text-3xl text-zinc-900 font-semibold">
             Description
           </p>
