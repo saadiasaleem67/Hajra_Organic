@@ -38,20 +38,15 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    //
+    
     <div>
-      {/*upper message */}
-      {/* <div className="bg-gray-900">
-        <p className="text-gray-50 font-medium text-center p-2">
-          Delivery charges Rs.200. Delivery time for Karachi 4-5 working days,
-          Outside Karachi 5-10 working days. Except Weekends and Public Holidays
-        </p>
-      </div> */}
+     
+      
 
       {/*  Main Header */}
       <div className="container md:flex xl:items-center xl:justify-between flex items-center justify-between lg:items-center lg:justify-between sm:items-center sm:justify-between">
         {/* sheet for mobile and tablets*/}
-        <div className="text-4xl text-mytext lg:hidden">
+        <div className="text-3xl text-mytext lg:hidden mt-2">
           <NavBarSheet />
         </div>
 
@@ -86,7 +81,7 @@ const Navbar = () => {
         </nav>
 
         {/* contact*/}
-        <div className="flex gap-7 text-[30px] px-3">
+        <div className="flex xl:gap-7 gap-4 text-[30px] ">
           <div className="hover:cursor-pointer  ">
             <VscAccount className="h-12 w-8" />
           </div>
